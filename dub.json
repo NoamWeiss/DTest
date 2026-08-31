@@ -1,0 +1,36 @@
+{
+    "name": "dtest",
+    "description": "A Google Test-style unit testing framework for D",
+    "license": "MIT",
+    "authors": ["dtest contributors"],
+
+    "configurations": [
+        {
+            "name": "library",
+            "targetType": "library",
+            "sourcePaths": ["."],
+            "importPaths": ["."],
+            "excludedSourceFiles": ["selftest_main.d", "selftest_cases.d", "example_main.d", "dtest/*.d", "dtest-flat/*.d"]
+        },
+        {
+            "name": "selftest",
+            "targetType": "executable",
+            "targetPath": "bin",
+            "targetName": "dtest-selftest",
+            "sourcePaths": ["."],
+            "importPaths": ["."],
+            "mainSourceFile": "selftest_main.d",
+            "excludedSourceFiles": ["example_main.d", "dtest/*.d", "dtest-flat/*.d"]
+        },
+        {
+            "name": "example",
+            "targetType": "executable",
+            "targetPath": "bin",
+            "targetName": "dtest-example",
+            "sourcePaths": ["."],
+            "importPaths": ["."],
+            "mainSourceFile": "example_main.d",
+            "excludedSourceFiles": ["selftest_main.d", "selftest_cases.d", "dtest/*.d", "dtest-flat/*.d"]
+        }
+    ]
+}
