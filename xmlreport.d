@@ -1,5 +1,5 @@
 /**
- * dtest.xmlreport — JUnit-compatible XML output (--dtest-xml).
+ * DTest xmlreport — JUnit-compatible XML output (--dtest-xml).
  *
  * Produces a file that CI systems (Jenkins, GitHub Actions, etc.) can ingest.
  */

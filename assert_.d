@@ -1,5 +1,5 @@
 /**
- * dtest.assert_ — Assertion macros (EXPECT_* and ASSERT_*).
+ * DTest assert_ — Assertion macros (EXPECT_* and ASSERT_*).
  *
  * EXPECT_*  — non-fatal: records failure, test continues.
  * ASSERT_*  — fatal: records failure, current test body returns immediately.

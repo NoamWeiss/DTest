@@ -1,10 +1,19 @@
-# dtest
+# DTest
 
-A Google Test-style unit testing framework for the D programming language.
+A GoogleTest-style unit testing framework for the D programming language.
+
+DTest brings the [GoogleTest](https://github.com/google/googletest) testing
+model to D: the same `TEST` / `TEST_F` structure, the same `EXPECT_*` /
+`ASSERT_*` assertion families, the same fixture lifecycle, and the same
+console output. If you know GoogleTest, you already know DTest.
+
+> **Naming.** The project is called **DTest**. The lowercase form `dtest` is
+> the identifier used wherever a name has to be machine-readable: the DUB
+> package, the module and binary names, and the `--dtest-*` command-line flags.
 
 ## Features
 
-- `TEST`, `TEST_F`, and `TEST_DISABLED` macros matching Google Test semantics
+- `TEST`, `TEST_F`, and `TEST_DISABLED` macros matching GoogleTest semantics
 - `EXPECT_*` (non-fatal) and `ASSERT_*` (fatal) assertion families
 - Fixture-based tests with `setUp` / `tearDown` lifecycle hooks
 - Filter tests by glob pattern (`--dtest-filter=Suite.*`)
@@ -14,7 +23,7 @@ A Google Test-style unit testing framework for the D programming language.
 
 ## Installation
 
-Add dtest as a dependency in your `dub.json`:
+Add `dtest` as a dependency in your `dub.json`:
 
 ```json
 {
@@ -117,6 +126,16 @@ dub run --compiler=ldc2 --config=selftest
 dub run --compiler=ldc2 --config=example
 ```
 
+## Acknowledgements
+
+DTest is modelled on [GoogleTest](https://github.com/google/googletest), the
+C++ testing framework by Google. Its macro names, assertion families, fixture
+lifecycle, command-line flags, and console output format were all designed to
+follow GoogleTest so that its documentation and habits carry over. GoogleTest
+is Copyright 2008, Google Inc., and is distributed under the BSD 3-Clause
+License. DTest contains no GoogleTest source code. See [NOTICE](NOTICE).
+
 ## License
 
-MIT — see [LICENSE](LICENSE).
+DTest is distributed under the [BSD 3-Clause License](LICENSE), the same
+license as GoogleTest.

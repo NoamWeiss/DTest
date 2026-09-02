@@ -1,5 +1,5 @@
 /**
- * Self-tests for dtest — compiled in as part of the selftest configuration.
+ * Self-tests for DTest — compiled in as part of the selftest configuration.
  */
 module selftest_cases;
 

@@ -1,0 +1,14 @@
+DTest
+Copyright (c) 2026, Noam Weiss
+
+DTest is an independent implementation, in the D programming language, of the
+testing model popularised by GoogleTest (https://github.com/google/googletest).
+The TEST / TEST_F macros, the EXPECT_* / ASSERT_* assertion families, the
+fixture lifecycle, the command-line flags, and the console output format are
+deliberately modelled on GoogleTest so that its documentation and habits carry
+over.
+
+GoogleTest is Copyright 2008, Google Inc., and is distributed under the
+BSD 3-Clause License. DTest does not include any GoogleTest source code; it is
+released under the same BSD 3-Clause License (see LICENSE) in the spirit of
+that project.

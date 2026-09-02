@@ -1,5 +1,5 @@
 /**
- * dtest.runner — Test execution engine.
+ * DTest runner — Test execution engine.
  *
  * Features:
  *   - Filter tests by glob pattern (--dtest-filter=Suite.Test)

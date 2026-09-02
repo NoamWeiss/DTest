@@ -1,7 +1,7 @@
 /**
- * dtest.fixture — Base class and lifecycle support for TEST_F fixtures.
+ * DTest fixture — Base class and lifecycle support for TEST_F fixtures.
  *
- * Mirrors Google Test's ::testing::Test:
+ * Mirrors GoogleTest's ::testing::Test:
  *   - SetUpTestSuite  / TearDownTestSuite  (called once per suite)
  *   - setUp           / tearDown           (called around each test)
  */

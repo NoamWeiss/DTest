@@ -1,9 +1,9 @@
 /**
- * dtest.reporter — Output reporters.
+ * DTest reporter — Output reporters.
  *
  * Provides:
  *   Reporter        — abstract interface
- *   ConsoleReporter — colored terminal output matching Google Test style
+ *   ConsoleReporter — colored terminal output matching GoogleTest style
  */
 module reporter;
 

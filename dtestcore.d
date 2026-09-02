@@ -1,12 +1,15 @@
 /**
- * dtest.core — Test registration, discovery, and core data structures.
+ * DTest core (module dtestcore) — Test registration, discovery, and core data structures.
  *
  * Provides:
  *   - TestCase / TestResult structs
  *   - Global test registry
- *   - TEST()  mixin — plain test (analogous to gtest TEST)
- *   - TEST_F() mixin — fixture-based test (analogous to gtest TEST_F)
+ *   - TEST()  mixin — plain test (analogous to GoogleTest TEST)
+ *   - TEST_F() mixin — fixture-based test (analogous to GoogleTest TEST_F)
  *   - TEST_DISABLED() mixin — skipped test
+ *
+ * DTest is modelled on GoogleTest (https://github.com/google/googletest),
+ * Copyright 2008, Google Inc., BSD 3-Clause. See NOTICE for attribution.
  */
 module dtestcore;
 
@@ -179,7 +182,7 @@ mixin template TEST_DISABLED(string Suite, string Name, string Reason = "", stri
 /**
  * Declare a fixture-based test.
  *
- * The fixture class must extend `dtest.fixture.TestFixture` and be in scope.
+ * The fixture class must extend `fixture.TestFixture` and be in scope.
  *
  * Usage:
  * ---

@@ -1,36 +1,60 @@
 {
     "name": "dtest",
-    "description": "A Google Test-style unit testing framework for D",
-    "license": "MIT",
-    "authors": ["dtest contributors"],
-
+    "description": "DTest: a GoogleTest-style unit testing framework for D",
+    "homepage": "https://github.com/NoamWeiss/DTest",
+    "license": "BSD-3-Clause",
+    "copyright": "Copyright (c) 2026, Noam Weiss",
+    "authors": [
+        "Noam Weiss"
+    ],
     "configurations": [
         {
             "name": "library",
             "targetType": "library",
-            "sourcePaths": ["."],
-            "importPaths": ["."],
-            "excludedSourceFiles": ["selftest_main.d", "selftest_cases.d", "example_main.d", "dtest/*.d", "dtest-flat/*.d"]
+            "sourcePaths": [
+                "."
+            ],
+            "importPaths": [
+                "."
+            ],
+            "excludedSourceFiles": [
+                "selftest_main.d",
+                "selftest_cases.d",
+                "example_main.d"
+            ]
         },
         {
             "name": "selftest",
             "targetType": "executable",
             "targetPath": "bin",
             "targetName": "dtest-selftest",
-            "sourcePaths": ["."],
-            "importPaths": ["."],
+            "sourcePaths": [
+                "."
+            ],
+            "importPaths": [
+                "."
+            ],
             "mainSourceFile": "selftest_main.d",
-            "excludedSourceFiles": ["example_main.d", "dtest/*.d", "dtest-flat/*.d"]
+            "excludedSourceFiles": [
+                "example_main.d"
+            ]
         },
         {
             "name": "example",
             "targetType": "executable",
             "targetPath": "bin",
             "targetName": "dtest-example",
-            "sourcePaths": ["."],
-            "importPaths": ["."],
+            "sourcePaths": [
+                "."
+            ],
+            "importPaths": [
+                "."
+            ],
             "mainSourceFile": "example_main.d",
-            "excludedSourceFiles": ["selftest_main.d", "selftest_cases.d", "dtest/*.d", "dtest-flat/*.d"]
+            "excludedSourceFiles": [
+                "selftest_main.d",
+                "selftest_cases.d"
+            ]
         }
     ]
 }
